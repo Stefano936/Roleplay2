@@ -11,9 +11,7 @@ namespace RoleplayGame
         int AttackValue{ get; }
 
         int DefenseValue{ get; }
-
-        int Health { get; set;}
-
+        int Health {get;}
         void ReceiveAttack(int power) { }
 
         void Cure() { }
