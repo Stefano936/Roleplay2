@@ -2,10 +2,6 @@ using NUnit.Framework;
 
 namespace Test.Library
 {
-    public class Tests
-    {
-        namespace Program
-{
     public class RoleplayGameTests
     {
         /*
@@ -47,7 +43,7 @@ namespace Test.Library
         */
         [Test]
         public void TestNegativeCost(){
-            Item hacha = new Item("hacha", "Arma", -50, 15, 0);
+            Items hacha = new Items("hacha", "Arma", -50, 15, 0);
             Assert.False(hacha.SetCost(-50));
         }
         /*
