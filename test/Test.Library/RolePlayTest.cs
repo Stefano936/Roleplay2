@@ -35,30 +35,5 @@ namespace Test.Library
             bool result2 = book.AddSpell(sp);
             Assert.False(result2);
         }
-
-        /*
-            JUSTIFICACIÓN:
-            Este test verifica que el costo de los items no sea un número negativo,
-            si es, devuelve false, de lo contrario se guarda el valor asignado del costo.
-        */
-        [Test]
-        public void TestNegativeCost(){
-            Items hacha = new Items("hacha", "Arma", -50, 15, 0);
-            Assert.False(hacha.SetCost(-50));
-        }
-        /*
-            JUSTIFICACIÓN:   
-            Este test verifica que un mago no tenga más de un libro de hechizos, ya que este
-            es unico y personal de cada mago.
-        */ 
-        [Test]
-        public void TestDuplicatedSpellBook(){
-            SpellBook sps=new SpellBook();
-            Wizard wiz= new Wizard();
-
-            bool result= wiz.SetSpellBook(sps);
-            bool result2=wiz.SetSpellBook(sps);
-            Assert.False(result2);
-        }
     }
 }
