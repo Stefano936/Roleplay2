@@ -1,6 +1,6 @@
 using NUnit.Framework;
 
-namespace Test.Library
+namespace RoleplayGame
 {
     public class RoleplayGameTests
     {
