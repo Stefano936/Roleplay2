@@ -2,6 +2,7 @@ namespace RoleplayGame
 {
     public class Archer
     {
+        
         private int health = 100;
 
         public Archer(string name)
