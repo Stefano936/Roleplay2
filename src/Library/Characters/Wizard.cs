@@ -10,10 +10,10 @@ namespace RoleplayGame
         }
 
         public string Name { get; set; }
+
         public SpellsBook SpellsBook { get; set; }
+
         public Staff Staff { get; set; }
-        public Bow Bow {get; set; }
-        public Helmet Helmet {get; set; }
 
         public int AttackValue
         {
