@@ -1,6 +1,6 @@
 namespace RoleplayGame
 {
-    public class Spell :IAttack, IDefense
+    public class Spell :IAttack, IDefense, IMagic
     {
         public int AttackValue
         {
@@ -15,6 +15,12 @@ namespace RoleplayGame
             get
             {
                 return 70;
+            }
+        }
+
+        public bool Magic{
+            get {
+                return true;
             }
         }
     }

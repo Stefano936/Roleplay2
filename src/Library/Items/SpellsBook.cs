@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 namespace RoleplayGame
 {
-    public class SpellsBook : IAttack, IDefense
+    public class SpellsBook : IAttack, IDefense, IMagic
     {
         public Spell[] Spells { get; set; }
         
@@ -29,6 +29,11 @@ namespace RoleplayGame
                     value += spell.DefenseValue;
                 }
                 return value;
+            }
+        }
+        public bool Magic {
+            get {
+                return true;
             }
         }
     }
