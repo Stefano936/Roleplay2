@@ -2,9 +2,7 @@ namespace RoleplayGame
 {
     public class Knight : ICharacter
     {
-        private int value = 100;
-    
-
+        private int health = 100;
         public Knight(string name)
         {
             this.Name = name;

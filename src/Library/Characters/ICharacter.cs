@@ -2,6 +2,7 @@ namespace RoleplayGame
 {
     public interface ICharacter
     {
+        
         string Name { get; set; }
         
         Bow Bow { get; set; }
@@ -11,7 +12,9 @@ namespace RoleplayGame
         int AttackValue{ get; }
 
         int DefenseValue{ get; }
-        int Health {get;}
+
+        int Health { get; set;}
+
         void ReceiveAttack(int power) { }
 
         void Cure() { }
