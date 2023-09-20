@@ -2,21 +2,19 @@ namespace RoleplayGame
 {
     public class Knight : ICharacter
     {
-        private int health = 100;
+        private int value = 100;
+    
 
         public Knight(string name)
         {
             this.Name = name;
         }
-
         public string Name { get; set; }
-
         public Sword Sword { get; set; }
-
         public Shield Shield { get; set; }
-
         public Armor Armor { get; set; }
-
+        public Bow Bow { get; set; }
+        public Helmet Helmet { get; set; }
         public int AttackValue
         {
             get
