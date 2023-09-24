@@ -30,7 +30,7 @@ namespace RoleplayGame
         [Test]
         public void TestDuplicatedSpell(){
             SpellsBook book = new SpellsBook();
-            Spell sp = new Spell("Heal");
+            Spell sp = new Spell();
 
             bool result = book.AddSpell(sp);
             bool result2 = book.AddSpell(sp);
