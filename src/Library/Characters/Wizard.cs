@@ -16,6 +16,13 @@ namespace RoleplayGame
         public Bow Bow {get; set; }
         public Helmet Helmet {get; set; }
 
+        public bool SetName(string name) {
+            if (!string.IsNullOrEmpty(name)) {
+                this.Name = name;
+                return true;
+            } else { return false; }
+        }
+
         public int AttackValue
         {
             get
