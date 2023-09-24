@@ -1,10 +1,11 @@
 using System.Collections.Generic;
+using System.Collections;
 
 namespace RoleplayGame
 {
     public class SpellsBook : IAttack, IDefense, IMagic
     {
-        public Spell[] Spells { get; set; }
+        public ArrayList Spells { get; set; }
         
         public int AttackValue
         {
@@ -34,7 +35,17 @@ namespace RoleplayGame
         public bool Magic {
             get {
                 return true;
-            }
+        }
+        }
+        public ArrayList GetSpells(){
+        return this.Spells;
+        }
+
+        public bool AddSpell(Spell sp) {
+        if (!(Spells.Contains(sp))) {
+            Spells.Add(sp);
+            return true;
+        } else { return false; }
         }
     }
 }
