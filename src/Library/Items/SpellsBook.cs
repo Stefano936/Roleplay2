@@ -5,7 +5,7 @@ namespace RoleplayGame
 {
     public class SpellsBook : IAttack, IDefense, IMagic
     {
-        public ArrayList Spells { get; set; }
+        public ArrayList Spells = new ArrayList();
         
         public int AttackValue
         {
@@ -38,14 +38,16 @@ namespace RoleplayGame
         }
         }
         public ArrayList GetSpells(){
-        return this.Spells;
+            return this.Spells;
         }
 
         public bool AddSpell(Spell sp) {
-        if (!(Spells.Contains(sp))) {
-            Spells.Add(sp);
-            return true;
-        } else { return false; }
+            if (sp != null) { 
+                if (!(this.Spells.Contains(sp))) {
+                    this.Spells.Add(sp);
+                    return true;
+                } else { return false; }
+            } else { return false; }
         }
     }
 }
