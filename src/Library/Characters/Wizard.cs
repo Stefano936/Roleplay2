@@ -9,7 +9,7 @@ namespace RoleplayGame
         {
             this.Name = name;
         }
-
+        
         public string Name { get; set; }
         public SpellsBook SpellsBook { get; set; }
         public Staff Staff { get; set; }
